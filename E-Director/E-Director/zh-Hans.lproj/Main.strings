@@ -1,0 +1,111 @@
+
+/* Class = "UIButton"; normalTitle = "Actual Balance"; ObjectID = "0Wh-qi-qZQ"; */
+"0Wh-qi-qZQ.normalTitle" = "Actual Balance";
+
+/* Class = "UIButton"; normalTitle = "Class"; ObjectID = "1dh-LO-MXO"; */
+"1dh-LO-MXO.normalTitle" = "Class";
+
+/* Class = "UILabel"; text = "Statistic Data"; ObjectID = "3bN-Ql-GOd"; */
+"3bN-Ql-GOd.text" = "Statistic Data";
+
+/* Class = "UILabel"; text = "Class"; ObjectID = "4H4-hf-5aG"; */
+"4H4-hf-5aG.text" = "Class";
+
+/* Class = "UIButton"; normalTitle = "Message"; ObjectID = "4Xi-go-HDD"; */
+"4Xi-go-HDD.normalTitle" = "Message";
+
+/* Class = "UIButton"; normalTitle = "Renewal Fees"; ObjectID = "4ru-g4-b0V"; */
+"4ru-g4-b0V.normalTitle" = "Renewal Fees";
+
+/* Class = "UIButton"; normalTitle = "Add Stud"; ObjectID = "6EY-2f-p3b"; */
+"6EY-2f-p3b.normalTitle" = "Add Stud";
+
+/* Class = "UIButton"; normalTitle = "Settings"; ObjectID = "6Jo-4t-6FJ"; */
+"6Jo-4t-6FJ.normalTitle" = "Settings";
+
+/* Class = "UIButton"; normalTitle = "Class"; ObjectID = "6S9-wE-dVa"; */
+"6S9-wE-dVa.normalTitle" = "Class";
+
+/* Class = "UILabel"; text = "Financial Statistics"; ObjectID = "7ib-2G-lOU"; */
+"7ib-2G-lOU.text" = "Financial Statistics";
+
+/* Class = "UIButton"; normalTitle = "Stud"; ObjectID = "B2r-O3-xLt"; */
+"B2r-O3-xLt.normalTitle" = "Stud";
+
+/* Class = "UILabel"; text = "Statistics"; ObjectID = "GWy-Ho-E7L"; */
+"GWy-Ho-E7L.text" = "Statistics";
+
+/* Class = "UIButton"; normalTitle = "Class"; ObjectID = "Is3-3v-fbZ"; */
+"Is3-3v-fbZ.normalTitle" = "Class";
+
+/* Class = "UIButton"; normalTitle = "Survey"; ObjectID = "Kb0-Jl-4mL"; */
+"Kb0-Jl-4mL.normalTitle" = "Survey";
+
+/* Class = "UIButton"; normalTitle = "Attendence"; ObjectID = "O6Z-gC-jWf"; */
+"O6Z-gC-jWf.normalTitle" = "Attendence";
+
+/* Class = "UIButton"; normalTitle = "Statistics"; ObjectID = "PWf-SJ-6Ql"; */
+"PWf-SJ-6Ql.normalTitle" = "Statistics";
+
+/* Class = "UIButton"; normalTitle = "Expected Balance"; ObjectID = "Sjx-m0-6JZ"; */
+"Sjx-m0-6JZ.normalTitle" = "Expected Balance";
+
+/* Class = "UIButton"; normalTitle = "Stud"; ObjectID = "Spg-E6-k1N"; */
+"Spg-E6-k1N.normalTitle" = "Stud";
+
+/* Class = "UIButton"; normalTitle = "Refund Fees"; ObjectID = "TC4-a7-IcJ"; */
+"TC4-a7-IcJ.normalTitle" = "Refund Fees";
+
+/* Class = "UIButton"; normalTitle = "Class Management"; ObjectID = "Ws6-ka-OqS"; */
+"Ws6-ka-OqS.normalTitle" = "Class Management";
+
+/* Class = "UIButton"; normalTitle = "Schedule"; ObjectID = "XyY-tT-geL"; */
+"XyY-tT-geL.normalTitle" = "Schedule";
+
+/* Class = "UIViewController"; title = "Student"; ObjectID = "ZYr-uF-gHu"; */
+"ZYr-uF-gHu.title" = "Student";
+
+/* Class = "UIButton"; normalTitle = "Instructor Rating"; ObjectID = "aZO-M3-ILY"; */
+"aZO-M3-ILY.normalTitle" = "Instructor Rating";
+
+/* Class = "UIButton"; normalTitle = "eBilling"; ObjectID = "b06-Ap-Bf3"; */
+"b06-Ap-Bf3.normalTitle" = "eBilling";
+
+/* Class = "UIButton"; normalTitle = "Posted Admission "; ObjectID = "bIj-gr-7dC"; */
+"bIj-gr-7dC.normalTitle" = "Posted Admission ";
+
+/* Class = "UIButton"; normalTitle = "Settings"; ObjectID = "c3K-xa-WL5"; */
+"c3K-xa-WL5.normalTitle" = "Settings";
+
+/* Class = "UIButton"; normalTitle = "Admission"; ObjectID = "eVo-kr-0sX"; */
+"eVo-kr-0sX.normalTitle" = "Admission";
+
+/* Class = "UIButton"; normalTitle = "Schedule"; ObjectID = "f09-oA-HVa"; */
+"f09-oA-HVa.normalTitle" = "Schedule";
+
+/* Class = "UIButton"; normalTitle = "Settings"; ObjectID = "fe7-xU-dAS"; */
+"fe7-xU-dAS.normalTitle" = "Settings";
+
+/* Class = "UIButton"; normalTitle = "Statistics"; ObjectID = "l9E-62-PuQ"; */
+"l9E-62-PuQ.normalTitle" = "Statistics";
+
+/* Class = "UIButton"; normalTitle = "Class Data"; ObjectID = "n0B-sl-jJx"; */
+"n0B-sl-jJx.normalTitle" = "Class Data";
+
+/* Class = "UIButton"; normalTitle = "Statistics"; ObjectID = "tnM-gf-XdO"; */
+"tnM-gf-XdO.normalTitle" = "Statistics";
+
+/* Class = "UIButton"; normalTitle = "Schedule"; ObjectID = "uh2-hY-CgB"; */
+"uh2-hY-CgB.normalTitle" = "Schedule";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "v5F-X2-yZn"; */
+"v5F-X2-yZn.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UIButton"; normalTitle = "Schedule"; ObjectID = "xNE-af-p6E"; */
+"xNE-af-p6E.normalTitle" = "Schedule";
+
+/* Class = "UIButton"; normalTitle = "Stud"; ObjectID = "yDI-WB-xY3"; */
+"yDI-WB-xY3.normalTitle" = "Stud";
+
+/* Class = "UIButton"; normalTitle = "New Contract Nums"; ObjectID = "zXA-kj-gVh"; */
+"zXA-kj-gVh.normalTitle" = "New Contract Nums";
