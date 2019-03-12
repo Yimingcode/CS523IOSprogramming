@@ -8,14 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource{
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     @IBOutlet weak var table: UITableView!
     
     var data: [String] = []
     
-//    data[1] = "Second"
-//    data[2] = "Third"
+    var selectedRow:Int = -1
+    var newTextRow = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +24,31 @@ class ViewController: UIViewController, UITableViewDataSource{
          data.append("Second")
          data.append("Third")
         table.dataSource = self
-        table.dataSource = self
+        table.delegate = self
+        
         self.title = "Notes"
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationItem.largeTitleDisplayMode = .always
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNote))
         self.navigationItem.rightBarButtonItem = addButton
         self.navigationItem.leftBarButtonItem = editButtonItem
+        load()
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if selectedRow == -1 {
+            return
+            
+        }
+        data[selectedRow] = newTextRow
+        if newTextRow == "" {
+            data.remove(at: selectedRow)
+            
+        }
+        table.reloadData()
+        save()
     }
     
     @objc func addNote() {
@@ -37,10 +56,12 @@ class ViewController: UIViewController, UITableViewDataSource{
             return
         }
         
-        let name:String = "Item\(data.count + 1)"
+        let name:String = ""
         data.insert(name, at: 0)
         let indexPath:IndexPath = IndexPath(row: 0, section: 0)
         table.insertRows(at: [indexPath], with: .automatic)
+        table.selectRow(at: indexPath, animated: true, scrollPosition: .none)
+        self.performSegue(withIdentifier: "detail", sender: nil)
         
     }
     
@@ -62,6 +83,38 @@ class ViewController: UIViewController, UITableViewDataSource{
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         data.remove(at: indexPath.row)
         table.deleteRows(at: [indexPath], with: .fade)
+        save()
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "detail", sender: nil)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let detailView: DetailViewController = segue.destination as! DetailViewController
+        selectedRow = table.indexPathForSelectedRow!.row
+        detailView.masterView = self
+        detailView.setText(t: data[selectedRow])
+        
+    }
+    
+    
+    
+    func save() {
+        UserDefaults.standard.set(data, forKey: "Notes")
+        
+    }
+    
+    
+    func load() {
+        if let loadedData:[String] = UserDefaults.standard.value(forKey: "Notes") as? [String] {
+            data = loadedData
+            table.reloadData()
+            
+        }
+        
+    }
+    
 }
 
