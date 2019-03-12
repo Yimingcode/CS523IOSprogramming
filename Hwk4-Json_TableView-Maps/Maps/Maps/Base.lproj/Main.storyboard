@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Maps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oh6-sX-aJ1">
+                                <rect key="frame" x="0.0" y="59" width="414" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOR-b2-hBO">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="30"/>
+                                        <state key="normal" title="0º"/>
+                                        <connections>
+                                            <action selector="changePitch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j6b-hx-Wc7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztV-zZ-6Mn">
+                                        <rect key="frame" x="83" y="0.0" width="82.5" height="30"/>
+                                        <state key="normal" title="Type"/>
+                                        <connections>
+                                            <action selector="changeMapType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BVm-df-wfU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPN-PJ-rz3">
+                                        <rect key="frame" x="165.5" y="0.0" width="83" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuB-Mo-RMX">
+                                        <rect key="frame" x="248.5" y="0.0" width="82.5" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHG-CO-Jiv">
+                                        <rect key="frame" x="331" y="0.0" width="83" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="NHG-CO-Jiv" firstAttribute="leading" secondItem="zuB-Mo-RMX" secondAttribute="trailing" id="5eJ-nB-tAJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="ztV-zZ-6Mn" secondAttribute="bottom" id="81l-if-otU"/>
+                                    <constraint firstItem="zuB-Mo-RMX" firstAttribute="top" secondItem="Oh6-sX-aJ1" secondAttribute="top" id="97e-l9-VHn"/>
+                                    <constraint firstAttribute="bottom" secondItem="NHG-CO-Jiv" secondAttribute="bottom" id="MMF-JL-ORI"/>
+                                    <constraint firstItem="nPN-PJ-rz3" firstAttribute="top" secondItem="Oh6-sX-aJ1" secondAttribute="top" id="NMp-3P-Cgl"/>
+                                    <constraint firstItem="zOR-b2-hBO" firstAttribute="leading" secondItem="Oh6-sX-aJ1" secondAttribute="leading" id="VVa-MH-iYx"/>
+                                    <constraint firstItem="NHG-CO-Jiv" firstAttribute="top" secondItem="Oh6-sX-aJ1" secondAttribute="top" id="gP7-lK-zvG"/>
+                                    <constraint firstItem="ztV-zZ-6Mn" firstAttribute="top" secondItem="Oh6-sX-aJ1" secondAttribute="top" id="gYS-MX-72e"/>
+                                    <constraint firstAttribute="bottom" secondItem="nPN-PJ-rz3" secondAttribute="bottom" id="hjZ-Es-6q1"/>
+                                    <constraint firstItem="ztV-zZ-6Mn" firstAttribute="leading" secondItem="zOR-b2-hBO" secondAttribute="trailing" id="iVO-FN-78O"/>
+                                    <constraint firstItem="zOR-b2-hBO" firstAttribute="top" secondItem="Oh6-sX-aJ1" secondAttribute="top" id="kSs-JP-Ob5"/>
+                                    <constraint firstItem="zuB-Mo-RMX" firstAttribute="leading" secondItem="nPN-PJ-rz3" secondAttribute="trailing" id="lS1-fa-bOF"/>
+                                    <constraint firstAttribute="bottom" secondItem="zuB-Mo-RMX" secondAttribute="bottom" id="pxR-tk-h1b"/>
+                                    <constraint firstItem="nPN-PJ-rz3" firstAttribute="leading" secondItem="ztV-zZ-6Mn" secondAttribute="trailing" id="tDB-A7-Byu"/>
+                                    <constraint firstAttribute="trailing" secondItem="NHG-CO-Jiv" secondAttribute="trailing" id="xMh-ev-qYr"/>
+                                    <constraint firstAttribute="bottom" secondItem="zOR-b2-hBO" secondAttribute="bottom" id="z7K-2h-dZB"/>
+                                </constraints>
+                            </stackView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dov-ug-952">
+                                <rect key="frame" x="0.0" y="97" width="414" height="729"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0Rt-11-rQ3">
+                                <rect key="frame" x="0.0" y="826" width="414" height="29"/>
+                                <segments>
+                                    <segment title="Stevens"/>
+                                    <segment title="Juliana"/>
+                                    <segment title="Vine"/>
+                                    <segment title="Kith"/>
+                                    <segment title="Columbus"/>
+                                </segments>
+                                <connections>
+                                    <action selector="locationPicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="8SM-V5-dNG"/>
+                                </connections>
+                            </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Azp-Na-ATx">
+                                <rect key="frame" x="261" y="742" width="118" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="t2b-JQ-csg"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="OOJ-81-99d"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Rt-11-rQ3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2wU-wr-pC6"/>
+                            <constraint firstItem="Azp-Na-ATx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="263" id="76X-BI-6NS"/>
+                            <constraint firstItem="dov-ug-952" firstAttribute="top" secondItem="Oh6-sX-aJ1" secondAttribute="bottom" constant="8" id="7eP-CC-DDD"/>
+                            <constraint firstItem="nPN-PJ-rz3" firstAttribute="width" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.2" id="9ng-hI-PYH"/>
+                            <constraint firstItem="NHG-CO-Jiv" firstAttribute="width" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.2" id="DJx-aA-e0v"/>
+                            <constraint firstItem="dov-ug-952" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FGe-56-sYG"/>
+                            <constraint firstItem="Oh6-sX-aJ1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M5R-C8-DTJ"/>
+                            <constraint firstItem="dov-ug-952" firstAttribute="top" secondItem="NHG-CO-Jiv" secondAttribute="bottom" constant="8" id="Tdi-HS-6Rb"/>
+                            <constraint firstItem="0Rt-11-rQ3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-8" id="Zkt-aT-vUT"/>
+                            <constraint firstItem="NHG-CO-Jiv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="asO-VO-6yW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Azp-Na-ATx" secondAttribute="trailing" constant="37" id="b3n-Ik-IUK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Oh6-sX-aJ1" secondAttribute="trailing" id="bN8-Fd-Bky"/>
+                            <constraint firstItem="zuB-Mo-RMX" firstAttribute="width" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.2" id="exg-zp-SBf"/>
+                            <constraint firstItem="0Rt-11-rQ3" firstAttribute="top" secondItem="Azp-Na-ATx" secondAttribute="bottom" constant="55" id="gn6-qQ-7Jm"/>
+                            <constraint firstItem="0Rt-11-rQ3" firstAttribute="top" secondItem="dov-ug-952" secondAttribute="bottom" id="o90-Mu-d6J"/>
+                            <constraint firstItem="ztV-zZ-6Mn" firstAttribute="width" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.2" id="ocz-x5-yCE"/>
+                            <constraint firstItem="Oh6-sX-aJ1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="q3C-0f-NIb"/>
+                            <constraint firstItem="zOR-b2-hBO" firstAttribute="width" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.2" id="tmP-dh-gHk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Rt-11-rQ3" secondAttribute="trailing" id="uVY-LD-YUP"/>
+                            <constraint firstItem="dov-ug-952" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="x5s-lt-paO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="changeMapType" destination="ztV-zZ-6Mn" id="Afe-pg-S7O"/>
+                        <outlet property="changePitch" destination="zOR-b2-hBO" id="4ce-ML-oCh"/>
+                        <outlet property="mapView" destination="dov-ug-952" id="23Z-55-DCH"/>
+                        <outlet property="zoomSlider" destination="Azp-Na-ATx" id="XhO-B1-gxk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="133.25892857142856"/>
+        </scene>
+    </scenes>
+</document>
