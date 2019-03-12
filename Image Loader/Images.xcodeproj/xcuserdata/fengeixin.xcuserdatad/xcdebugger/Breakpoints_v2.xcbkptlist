@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Images/ImageViewController.swift"
+            timestampString = "497641275.759661"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Images.ImageViewController.(fetchImage in _085B3D51CEE1ECB7C84D94462730E926) () -&gt; ()"
+                  moduleName = "Images"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fengeixin/Desktop/Stevens/CS810A/Images/Images/ImageViewController.swift"
+                  timestampString = "497640364.606448"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "292">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Images.ImageViewController.((fetchImage in _085B3D51CEE1ECB7C84D94462730E926) () -&gt; ()).(closure #1)"
+                  moduleName = "Images"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fengeixin/Desktop/Stevens/CS810A/Images/Images/ImageViewController.swift"
+                  timestampString = "497640364.609688"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "194">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
