@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ML" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="GVM-ab-4Xc">
+                                <rect key="frame" x="30" y="74" width="354" height="512"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alcohol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxv-n6-X9W">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="14" minValue="10" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="lZD-Qc-elm">
+                                        <rect key="frame" x="-2" y="35.5" width="358" height="31"/>
+                                        <connections>
+                                            <action selector="updateValues" destination="BYZ-38-t0r" eventType="valueChanged" id="tVv-sf-7dX"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Malic Acid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j84-ft-lPv">
+                                        <rect key="frame" x="0.0" y="80.5" width="354" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="zlu-hn-kGm">
+                                        <rect key="frame" x="-2" y="116" width="358" height="31"/>
+                                        <connections>
+                                            <action selector="updateValues" destination="BYZ-38-t0r" eventType="valueChanged" id="QwK-kT-2pE"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BmT-O6-vl3">
+                                        <rect key="frame" x="0.0" y="161" width="354" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2.5" minValue="1.5" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="8X8-bL-qlE">
+                                        <rect key="frame" x="-2" y="196.5" width="358" height="31"/>
+                                        <connections>
+                                            <action selector="updateValues" destination="BYZ-38-t0r" eventType="valueChanged" id="L71-Ci-sM0"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alkalinity Ash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAg-vq-XOT">
+                                        <rect key="frame" x="0.0" y="241.5" width="354" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="10" maxValue="25" translatesAutoresizingMaskIntoConstraints="NO" id="O4a-d4-4rd">
+                                        <rect key="frame" x="-2" y="277" width="358" height="31"/>
+                                        <connections>
+                                            <action selector="updateValues" destination="BYZ-38-t0r" eventType="valueChanged" id="7bI-wz-ACM"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magnesium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06Y-Nd-pkT">
+                                        <rect key="frame" x="0.0" y="322" width="354" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="70" maxValue="120" translatesAutoresizingMaskIntoConstraints="NO" id="Xo8-Wf-x7K">
+                                        <rect key="frame" x="-2" y="357.5" width="358" height="31"/>
+                                        <connections>
+                                            <action selector="updateValues" destination="BYZ-38-t0r" eventType="valueChanged" id="SBQ-OH-6mZ"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Phenols" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEg-IK-twB">
+                                        <rect key="frame" x="0.0" y="402.5" width="354" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="xK7-V5-Era">
+                                        <rect key="frame" x="-2" y="438" width="358" height="31"/>
+                                        <connections>
+                                            <action selector="updateValues" destination="BYZ-38-t0r" eventType="valueChanged" id="yvb-4J-0yD"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cultivar 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAi-f2-0if">
+                                        <rect key="frame" x="0.0" y="483" width="354" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="GVM-ab-4Xc" secondAttribute="trailing" constant="10" id="6Sv-h1-4Fn"/>
+                            <constraint firstItem="GVM-ab-4Xc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="30" id="Huv-Ry-Mh5"/>
+                            <constraint firstItem="GVM-ab-4Xc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="eBZ-IB-D4Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="alcoholLabel" destination="Qxv-n6-X9W" id="6NN-ir-OGi"/>
+                        <outlet property="alcoholSlider" destination="lZD-Qc-elm" id="eV0-wo-L00"/>
+                        <outlet property="alkalinityAshLabel" destination="jAg-vq-XOT" id="yU4-9o-GJM"/>
+                        <outlet property="alkalinityAshSlider" destination="O4a-d4-4rd" id="jOJ-GG-8SE"/>
+                        <outlet property="ashLabel" destination="BmT-O6-vl3" id="zjb-sx-Qe8"/>
+                        <outlet property="ashSlider" destination="8X8-bL-qlE" id="5cG-01-Jxu"/>
+                        <outlet property="cultivar1Label" destination="IAi-f2-0if" id="zGR-7s-SRj"/>
+                        <outlet property="magnesiumLabel" destination="06Y-Nd-pkT" id="GwD-L5-Gje"/>
+                        <outlet property="magnesiumSlider" destination="Xo8-Wf-x7K" id="ivv-5Q-TDl"/>
+                        <outlet property="malicAcidLabel" destination="j84-ft-lPv" id="xlG-wx-nc1"/>
+                        <outlet property="malicAcidSlider" destination="zlu-hn-kGm" id="BR8-xL-kty"/>
+                        <outlet property="stackView" destination="GVM-ab-4Xc" id="vsy-9w-Twf"/>
+                        <outlet property="totalPhenolsLabel" destination="rEg-IK-twB" id="bp5-Tf-Ztz"/>
+                        <outlet property="totalPhenolsSlider" destination="xK7-V5-Era" id="kbR-Zj-MkQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84.057971014492765" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+</document>
